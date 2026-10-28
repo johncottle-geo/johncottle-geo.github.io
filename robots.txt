@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://johncottle-geo.github.io/sitemap.xml
