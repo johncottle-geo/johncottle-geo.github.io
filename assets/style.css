@@ -93,8 +93,7 @@ a:hover > .more span, .more:hover span, a:hover .more span { transform: translat
 .mini-name { display: block; padding: 14px 16px 16px; font-family: var(--display); font-size: 1.15rem; line-height: 1.2; color: var(--navy); }
 
 .strip { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 24px; }
-.strip li { display: flex; flex-direction: column; }
-.strip img { aspect-ratio: 4 / 5; width: 100%; object-fit: cover; margin-bottom: 14px; background: var(--wash); }
+.strip li { display: flex; flex-direction: column; align-items: center; text-align: center; }
 .p-name { font-family: var(--display); font-size: 1.3rem; line-height: 1.15; color: var(--navy); display: block; margin: 0 0 4px; }
 .p-name a { color: var(--navy); text-decoration: none; }
 .p-name a:hover { text-decoration: underline; }
@@ -188,12 +187,21 @@ td, th { border: 1px solid var(--line); padding: 8px 12px; text-align: left; ver
 .wrap.section > h3 { font-size: 1.4rem; color: var(--navy); margin: 40px 0 20px; }
 .people-grid { list-style: none; margin: 0 0 24px; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 28px; }
 .people-grid.small { grid-template-columns: repeat(auto-fill, minmax(170px, 1fr)); gap: 20px; }
-.person img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; margin-bottom: 12px; background: var(--wash); }
 .people-grid.small .p-name { font-size: 1.1rem; }
+.person { display: flex; flex-direction: column; align-items: center; text-align: center; }
+.people-grid.small .avatar { max-width: 150px; }
+.people-grid.past { grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 32px 20px; margin-bottom: 40px; }
+.people-grid.past .avatar { max-width: 120px; }
+.people-grid.past .p-name { font-size: 1.1rem; }
+.p-note { font-size: .78rem; line-height: 1.45; color: var(--muted); margin: 8px 0 0; }
+.p-note a { color: var(--navy); }
 .wrap.section > h2:not(:first-child) { margin-top: 72px; }
 .alumni { list-style: none; padding: 0; margin: 0 0 16px; max-width: 80ch; }
 .alumni li { padding: 12px 0; border-top: 1px solid var(--line); font-size: .96rem; }
 .alumni li span { color: var(--muted); }
+
+/* round member photos */
+.avatar { display: block; width: 100%; max-width: 200px; aspect-ratio: 1; border-radius: 50%; object-fit: cover; object-position: 50% 22%; background: var(--wash); border: 1px solid var(--line); margin: 0 auto 14px; }
 
 /* ---------- footer ---------- */
 .site-footer { background: var(--navy-deep); color: #C4D2DF; padding: 64px 0 24px; font-size: .92rem; }
