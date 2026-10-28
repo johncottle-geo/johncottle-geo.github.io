@@ -242,3 +242,5 @@ td, th { border: 1px solid var(--line); padding: 8px 12px; text-align: left; ver
   html { scroll-behavior: auto; }
   * { transition-duration: .01ms !important; }
 }
+
+.prose strong.me{text-decoration:underline;text-underline-offset:2px;text-decoration-thickness:1px}
