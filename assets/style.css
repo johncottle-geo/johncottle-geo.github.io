@@ -259,3 +259,7 @@ td, th { border: 1px solid var(--line); padding: 8px 12px; text-align: left; ver
 .prose ul.stats strong{display:block;font-family:'Newsreader',serif;font-size:1.45rem;color:var(--navy);line-height:1.1;margin-bottom:6px}
 .prose ul.stats span{font-size:.85rem;color:#40566b;line-height:1.4}
 @media(max-width:760px){.prose ul.stats{grid-template-columns:repeat(2,1fr)}}
+
+.prose ul.findings{margin:10px 0 26px}
+.prose ul.findings li{margin:0 0 12px}
+.prose .cite{display:block;font-size:.85rem;color:#4d6378;margin-top:2px}
