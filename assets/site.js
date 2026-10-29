@@ -17,4 +17,21 @@
   }
   var y = document.getElementById('year');
   if (y) y.textContent = new Date().getFullYear();
+  var q = document.getElementById('pubq');
+  if (q) {
+    var items = [].slice.call(document.querySelectorAll('.prose p')).filter(function (p) {
+      return /^\s*\d+\.\s/.test(p.textContent);
+    });
+    var count = document.getElementById('pubcount');
+    q.addEventListener('input', function () {
+      var terms = q.value.toLowerCase().split(/\s+/).filter(Boolean), shown = 0;
+      items.forEach(function (p) {
+        var t = p.textContent.toLowerCase();
+        var ok = terms.every(function (w) { return t.indexOf(w) > -1; });
+        p.hidden = !ok;
+        if (ok) shown++;
+      });
+      count.textContent = terms.length ? shown + ' of ' + items.length + ' entries match' : '';
+    });
+  }
 })();

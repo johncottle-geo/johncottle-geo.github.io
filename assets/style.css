@@ -263,3 +263,30 @@ td, th { border: 1px solid var(--line); padding: 8px 12px; text-align: left; ver
 .prose ul.findings{margin:10px 0 26px}
 .prose ul.findings li{margin:0 0 12px}
 .prose .cite{display:block;font-size:.85rem;color:#4d6378;margin-top:2px}
+
+/* band, recent, join */
+.band{background:var(--navy);color:#fff;padding:80px 0}
+.band-in{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:40px 56px;align-items:center}
+.band h2{font-size:clamp(1.9rem,4vw,2.8rem);font-weight:400;margin-bottom:16px}
+.band p{color:#D6E0EA;max-width:52ch}
+.band .more{color:var(--gold)}
+.band-stats{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.band-stats li{padding:18px;border:1px solid rgba(255,255,255,.22);border-top:3px solid var(--gold)}
+.band-stats strong{display:block;font-family:'Newsreader',serif;font-size:1.7rem;font-weight:400;line-height:1.1;margin-bottom:6px}
+.band-stats span{font-size:.9rem;color:#D6E0EA}
+.recent{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:40px 56px}
+.recent h2{font-size:clamp(1.8rem,3.6vw,2.4rem);margin-bottom:20px}
+.news,.selpub{list-style:none;margin:0;padding:0}
+.news li{display:grid;grid-template-columns:78px minmax(0,1fr);gap:12px;padding:14px 0;border-top:1px solid var(--line)}
+.news time{font-family:var(--mono);font-size:.78rem;letter-spacing:.06em;color:var(--muted);text-transform:uppercase;padding-top:3px}
+.selpub li{padding:14px 0;border-top:1px solid var(--line)}
+.selpub a{font-family:'Newsreader',serif;font-size:1.1rem;line-height:1.35;color:var(--navy)}
+.selpub span{display:block;font-size:.88rem;color:var(--muted);margin-top:4px}
+.join{background:#fff;border:1px solid var(--line);border-left:4px solid var(--gold);padding:24px 28px;margin:0 0 40px;max-width:860px}
+.join h2{font-size:1.6rem;margin:0 0 10px}
+.join p{margin:0 0 10px}
+.pubfilter{margin:0 0 24px}
+.pubfilter input{width:100%;max-width:520px;padding:12px 14px;border:1px solid var(--line);border-radius:4px;font:inherit;background:#fff}
+.pubfilter small{display:block;margin-top:6px;color:var(--muted)}
+@media(max-width:860px){.band-in,.recent{grid-template-columns:minmax(0,1fr)}}
+.visually-hidden{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
